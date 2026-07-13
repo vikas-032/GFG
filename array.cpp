@@ -20,19 +20,25 @@ return 0;
 
 // Q2 second part of finding smallest and largest at same time?
 
-#include<iostream>
+#include <iostream>
+#include <algorithm> // Needed for min and max
+#include <climits>   // Needed for INT_MAX and INT_MIN
 using namespace std;
-int main(){
-    int nums[]={5, 10, 66, 33, -44, -88};
-    int size=6;
-    int smallest=INT_MAX;
-    int largest=INT_MIN;
-    for(int i=0; i<size; i++){
-        smallest=min(nums[i], smallest);
-        largest=max(nums[i], largest);
 
+int main() {
+    int nums[] = {4, 44, 55, 66, -333, 32};
+    int size = 6;
+
+    int smallest = INT_MAX;
+    int largest = INT_MIN;
+
+    for (int i = 0; i < size; i++) {
+        smallest = min(nums[i], smallest);
+        largest = max(nums[i], largest);
     }
-    cout<<"smallest"<<smallest<<endl;
-    cout<<"largest"<<largest<< endl;
+
+    cout << "Smallest: " << smallest << endl;
+    cout << "Largest: " << largest << endl;
+
     return 0;
 }
