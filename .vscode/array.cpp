@@ -18,6 +18,8 @@ return 0;
 }
 */
 
+/*
+
 // Q2 second part of finding smallest and largest at same time?
 
 #include <iostream>
@@ -42,3 +44,5 @@ int main() {
 
     return 0;
 }
+*/
+
