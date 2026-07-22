@@ -1,8 +1,13 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+// [1, 6, 8, 10 , 12, 15] index=0
+// size of array = 0=1 , 1=6 , 2=8, 3=10, 4= 12 , 5=15
+//target =6;
+//7 print then serch instert operation 8 solution 8
+// binary serch = fast algoritham it is used to find a element in a sorted array 
 
-class Solution {
+class Solution {  
 public:
     int searchInsert(vector<int>& arr, int target) {
         int start = 0, end = arr.size() - 1;
@@ -15,7 +20,7 @@ public:
                 return mid; // found exact match
             }
             else if (arr[mid] < target) {
-                start = mid + 1;
+                start = mid + 1; 
             }
             else {
                 ans = mid; // possible insert position
@@ -33,3 +38,6 @@ int main() {
     cout << sol.searchInsert(arr, target) << endl; // Output: 2
     return 0;
 }
+
+// n+n(2n)
+//o(n)
