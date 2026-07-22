@@ -13,3 +13,5 @@ This repository contains various pattern-printing programs implemented in C++.
 **Description**: Prints a numeric pyramid pattern where each row contains consecutive numbers starting from 1.
 
 **Pattern Output**:
+
+Leet Code 
